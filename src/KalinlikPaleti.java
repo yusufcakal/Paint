@@ -29,6 +29,7 @@ public class KalinlikPaleti extends JPanel{
         String[]  items = new String[]{"İnce", "Orta",  "Kalın",  "Çok Kalın"};
         JList<String> list = new JList<>(items);
         list.setBackground(new Color(224,224,224));
+        list.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
         add(list);
         btnTemizle.setLocation(0 , 200);
         add(btnTemizle);
